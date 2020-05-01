@@ -38,7 +38,7 @@ namespace Day4_MD
 
             do
             {
-                Console.WriteLine("Uzminiet skaitli no 0 līdz 10");
+                Console.WriteLine("Uzminiet skaitli no 1 līdz 100");
                 string s = Console.ReadLine();
 
                 int i = int.Parse(s);
