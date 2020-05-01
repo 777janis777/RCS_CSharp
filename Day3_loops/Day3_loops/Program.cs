@@ -120,7 +120,7 @@ namespace Day3_loops
         static void TaskMD() 
         {
             int biggest = 0;
-            int smallest = int.MinValue;
+            int smallest = 0;
 
             int i = 2;
             while (i < 5) 
