@@ -6,7 +6,7 @@ namespace Day5_arrays
     {
         static void Main(string[] args)
         {
-            FiveNumbers();
+            Task3();
         }
 
         static void ArraySample()
@@ -35,14 +35,72 @@ namespace Day5_arrays
             int[] num = new int[5];
             int sum = 0;
 
-            for (int i=0; i < num.Length; i++)
+            Console.WriteLine("Ievadiet piecus skaitļus");
+
+            for (int i = 0; i < num.Length; i++)
             {
-                num[i] = int.Parse (Console.ReadLine());
+                num[i] = int.Parse(Console.ReadLine());
 
                 sum += num[i];
             }
-            Console.WriteLine(sum);
-            
+            Console.WriteLine("Šo skaitļu summa ir " + sum);
+        }
+
+        static void FiveNumbers1()
+        {
+            int[] num = new int[5];
+            int sum = 0;
+
+            // 1. punkts
+            for (int i = 0; i < num.Length; i++)
+            {
+                Console.WriteLine("Ievadiet skaitli!");
+                num[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            // 2. punkts
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    sum = sum + a[i];
+            //}
+
+            Console.WriteLine("Summa: " + sum);
+        }
+
+        static void Task2()
+        {
+            int[] a = { 1, 6, 7, 12, 14, 9 };
+            int sum = 0;
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum = sum + a[i];
+            }
+
+            Console.WriteLine(sum / a.Length);
+        }
+
+        static void Task3()
+        {
+            int[] num = new int[10];
+            int Min = 1;
+            int Max = 11;
+
+            Random randnum = new Random();
+
+            for (int i = 1; i < num.Length; i++)
+            {
+                num[i] = randnum.Next(Min, Max);
+            }
+
+            foreach (int j in randnum)
+            {
+                Console.WriteLine("")
+            }
+
+
         }
     }
 }
+
+
